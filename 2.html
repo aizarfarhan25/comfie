@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@300,301,400,401,500,501,700,701&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: "Satoshi";
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <nav class="fixed top-0 left-0 right-0 z-50 shadow-md bg-white">
+        <div class="mx-auto px-10 py-4 flex items-center justify-between">
+          <a href="" class="font-bold text-2xl">Comfie</a>
+
+          <!-- For Desktop -->
+          <div class="hidden space-x-8 md:flex">
+            <a href="#" class="hover:text-fuchsia-600">Home</a>
+            <a href="#about" class="hover:text-fuchsia-600">About</a>
+            <a href="#project" class="hover:text-fuchsia-600">Project</a>
+            <a href="#" class="hover:text-fuchsia-600">Contact Us</a>
+          </div>
+
+          <!-- For Mobile -->
+          <button id="mobileMenuButton" class="text-black md:hidden">
+            <svg
+              id="menuIcon"
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+            <svg
+              id="closeIcon"
+              class="h-6 w-6 hidden"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+
+          <a href="" class="hidden space-x-8 md:flex italic font-bold"
+            >@comfie.id</a
+          >
+        </div>
+      </nav>
+
+      <div
+        id="mobileMenu"
+        class="fixed top-0 right-0 h-full w-64 bg-zinc-600 p-6 menu-slide md:hidden z-40"
+      >
+        <div class="flex flex-col space-y-4 mt-16">
+          <a href="#" class="text-white hover:text-fuchsia-600">Home</a>
+          <a href="#about" class="text-white hover:text-fuchsia-600">About</a>
+          <a href="#project" class="text-white hover:text-fuchsia-600"
+            >Project</a
+          >
+          <a href="#" class="text-white hover:text-fuchsia-600">Contact Us</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12 mt-24">
+      <div class="grid gap-8 md:grid-cols-2">
+        <div
+          class="flex flex-col items-center text-center md:items-start md:text-left"
+        >
+          <h1 class="mb-6 text-4xl leading-tight md:text-5xl">
+            <span class="font-bold text-fuchsia-600">Comfie</span> by
+            <span class="font-bold italic underline">NiuHome</span>
+          </h1>
+
+          <p class="mb-8 text-lg md:text-2xl">
+            Transforming Interiors with Style and Comfort, Where Every Space
+            Feels Like Home.
+          </p>
+          <br />
+
+          <h2 class="mb-6 text-3xl md:text-4xl font-medium">
+            Modern Minimalist Approach
+          </h2>
+
+          <p class="mb-8 text-lg md:text-2xl font">
+            Experience the perfect blend of form and function with our modern
+            minimalist designs. We create spaces that are both beautiful and
+            practical, tailored to your unique lifestyle and preferences.
+          </p>
+
+          <div class="flex items-center justify-between space-x-10">
+            <div>
+              <h3
+                class="text-xl md:text-2xl lg:text-3xl font-bold text-fuchsia-600"
+              >
+                500+
+              </h3>
+              <p class="font-bold">Producs</p>
+            </div>
+
+            <div>
+              <h3
+                class="text-xl md:text-2xl lg:text-3xl font-bold text-fuchsia-600 text-center"
+              >
+                10+
+              </h3>
+              <p class="font-bold">Projects</p>
+            </div>
+
+            <div>
+              <h3
+                class="text-xl md:text-2xl lg:text-3xl font-bold text-fuchsia-600 text-center"
+              >
+                1st
+              </h3>
+              <p class="font-bold text-balance">In Style Rankings</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative mt-8 grid gap-4 md:mt-0">
+          <div class="relative mt-8 grid gap-4 md:mt-0">
+            <div class="overflow-hidden rounded-3xl">
+              <img
+                src="/wallpaper-1.jpg"
+                alt="Modern green two-story house"
+                class="h-full w-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Us -->
+      <section
+        id="about"
+        class="bg-violet-400 h-full mt-10 rounded-2xl shadow-md container mx-auto px-4 py-12 mt-24"
+      >
+        <div class="text-center">
+          <h2 class="text-2xl md:text-3xl lg:text-5xl text-white font-bold">
+            About Us
+          </h2>
+        </div>
+        <div class="grid gap-8 md:grid-cols-2">
+          <div
+            class="flex flex-col items-center text-center justify-center md:items-start md:text-left"
+          >
+            <p class="text-white text-lg md:text-2xl p-4">
+              Welcome to Comfie, where comfort meets style in the art of
+              interior design. As a proud brand under <b>NiuHome</b>, we
+              specialize in crafting modern minimalist interiors that blend
+              functionality with aesthetics. Our mission is to transform
+              ordinary spaces into extraordinary living experiences tailored to
+              your unique lifestyle and preferences.
+            </p>
+          </div>
+
+          <div class="relative mt-8 grid p-4 md:mt-0 justify-center">
+            <div class="overflow-hidden rounded-3xl">
+              <img
+                src="/aboutus-1.jpeg"
+                alt="Modern green two-story house"
+                class="h-80 w-full object-cover object-center"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="grid gap-8 md:grid-cols-2">
+          <div class="relative mt-8 grid p-4 md:mt-0">
+            <div class="overflow-hidden rounded-3xl">
+              <img
+                src="/aboutus-2.jpeg"
+                alt="Modern green two-story house"
+                class="h-80 w-full object-cover object-center"
+              />
+            </div>
+          </div>
+          <div
+            class="flex flex-col items-center text-center justify-center md:items-start md:text-left"
+          >
+            <p class="text-white text-lg md:text-2xl p-4">
+              With a commitment to excellence and innovation, we have
+              successfully completed over 10+ projects and curated a collection
+              of 500+ products that embody elegance and practicality. Recognized
+              as a leader in interior design, we take pride in being ranked 1st
+              in Style Rankings.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid gap-8">
+          <div
+            class="flex flex-col items-center text-center justify-center md:items-start md:text-left mt-5"
+          >
+            <p class="text-white text-lg md:text-2xl text-center p-4">
+              At Comfie, we believe that your space is a reflection of your
+              personality. That's why we collaborate closely with our clients to
+              create designs that resonate with their vision and bring their
+              dream spaces to life. Whether it's your home, office, or any other
+              space, we are here to elevate your environment with designs that
+              feel as good as they look. Let us turn your vision into reality
+              and make every space truly yours. Welcome to the world of Comfie
+              where every detail is designed for comfort and beauty.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project -->
+      <section id="project" class="mt-20">
+        <div class="p-5 md:p-10">
+          <div class="text-center mb-10">
+            <h2 class="text-2xl md:text-3xl lg:text-5xl text-black font-bold">
+              Our Projects
+            </h2>
+          </div>
+          <div
+            class="columns-1 gap-5 sm:columns-2 md:columns-3 lg:columns-4 [&>img:not(:first-child)]:mt-5 [&>img:not(:first-child)]:rounded-3xl"
+          >
+            <img
+              src="/project-2.jpeg"
+              alt=""
+              class="rounded-3xl transition-transform duration-300 hover:translate-y-[-10px]"
+            />
+            <img
+              src="/project-3.jpeg"
+              alt=""
+              class="transition-transform duration-300 hover:translate-y-[-10px]"
+            />
+            <img
+              src="/project-6.jpeg"
+              alt=""
+              class="transition-transform duration-300 hover:translate-y-[-10px]"
+            />
+            <img
+              src="/project-7.jpeg"
+              alt=""
+              class="transition-transform duration-300 hover:translate-y-[-10px]"
+            />
+            <img
+              src="/project-8.jpeg"
+              alt=""
+              class="transition-transform duration-300 hover:translate-y-[-10px]"
+            />
+            <img
+              src="/project-9.jpeg"
+              alt=""
+              class="transition-transform duration-300 hover:translate-y-[-10px]"
+            />
+            <img
+              src="/project-10.jpeg"
+              alt=""
+              class="transition-transform duration-300 hover:translate-y-[-10px]"
+            />
+            <img
+              src="/project-11.jpeg"
+              alt=""
+              class="transition-transform duration-300 hover:translate-y-[-10px]"
+            />
+            <img
+              src="/project-12.jpeg"
+              alt=""
+              class="transition-transform duration-300 hover:translate-y-[-10px]"
+            />
+            <img
+              src="/project-13.jpeg"
+              alt=""
+              class="transition-transform duration-300 hover:translate-y-[-10px]"
+            />
+            <img
+              src="/project-14.jpeg"
+              alt=""
+              class="transition-transform duration-300 hover:translate-y-[-10px]"
+            />
+            <img
+              src="/project-15.jpeg"
+              alt=""
+              class="transition-transform duration-300 hover:translate-y-[-10px]"
+            />
+            <img
+              src="/project-16.jpeg"
+              alt=""
+              class="transition-transform duration-300 hover:translate-y-[-10px]"
+            />
+            <img
+              src="/project-17.jpeg"
+              alt=""
+              class="transition-transform duration-300 hover:translate-y-[-10px]"
+            />
+            <img
+              src="/project-18.jpeg"
+              alt=""
+              class="transition-transform duration-300 hover:translate-y-[-10px]"
+            />
+            <img
+              src="/project-21.jpeg"
+              alt=""
+              class="transition-transform duration-300 hover:translate-y-[-10px]"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const mobileMenuButton = document.getElementById("mobileMenuButton");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const menuIcon = document.getElementById("menuIcon");
+      const closeIcon = document.getElementById("closeIcon");
+
+      mobileMenu.classList.add("hidden");
+
+      mobileMenuButton.addEventListener("click", function () {
+        mobileMenu.classList.toggle("hidden"); // Toggle visibility of the mobile menu
+        mobileMenu.classList.toggle("show"); // Tambahkan atau hapus kelas show untuk animasi
+        if (mobileMenu.classList.contains("hidden")) {
+          menuIcon.classList.remove("hidden");
+          closeIcon.classList.add("hidden");
+        } else {
+          menuIcon.classList.add("hidden");
+          closeIcon.classList.remove("hidden");
+        }
+      });
+    </script>
+  </body>
+</html>
