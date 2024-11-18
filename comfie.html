@@ -13,6 +13,14 @@
       * {
         font-family: "Satoshi";
       }
+      #mobileMenu {
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(100%);
+      }
+
+      #mobileMenu.show {
+        transform: translateX(0);
+      }
     </style>
   </head>
   <body>
@@ -124,7 +132,7 @@
               <h3
                 class="text-xl md:text-2xl lg:text-3xl font-bold text-fuchsia-600 text-center"
               >
-                10+
+                20+
               </h3>
               <p class="font-bold">Projects</p>
             </div>
@@ -330,17 +338,14 @@
       const menuIcon = document.getElementById("menuIcon");
       const closeIcon = document.getElementById("closeIcon");
 
-      mobileMenu.classList.add("hidden");
-
       mobileMenuButton.addEventListener("click", function () {
-        mobileMenu.classList.toggle("hidden"); // Toggle visibility of the mobile menu
-        mobileMenu.classList.toggle("show"); // Tambahkan atau hapus kelas show untuk animasi
-        if (mobileMenu.classList.contains("hidden")) {
-          menuIcon.classList.remove("hidden");
-          closeIcon.classList.add("hidden");
-        } else {
+        mobileMenu.classList.toggle("show"); // Toggle 'show' class for animation
+        if (mobileMenu.classList.contains("show")) {
           menuIcon.classList.add("hidden");
           closeIcon.classList.remove("hidden");
+        } else {
+          menuIcon.classList.remove("hidden");
+          closeIcon.classList.add("hidden");
         }
       });
     </script>
